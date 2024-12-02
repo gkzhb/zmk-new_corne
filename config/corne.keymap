@@ -85,10 +85,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp EXCLAMATION  &kp AT_SIGN       &kp HASH           &kp DOLLAR            &kp PERCENT              &mmv MOVE_UP     &kp CARET       &kp AMPERSAND    &kp ASTERISK     &kp N9           &kp N0   &kp BSPC
-&trans  &kp N1           &kp N2            &kp N3             &kp N4                &kp N5                   &mmv MOVE_DOWN   &kp N6          &kp N7           &kp N8           &kp N9           &kp N0   &kp PG_UP
-&trans  &rgb_ug RGB_OFF  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &mmv MOVE_LEFT   &kp LEFT_BRACE  &kp RIGHT_BRACE  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END  &kp PG_DN
-                         &kp C_MUTE        &trans             &trans                &trans                   &mmv MOVE_RIGHT  &kp INS         &kp DEL          &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN       &kp HASH           &kp DOLLAR            &kp PERCENT              &mmv MOVE_UP     &kp CARET       &kp AMPERSAND    &kp ASTERISK  &kp UNDERSCORE  &kp PLUS  &kp BSPC
+&trans  &kp N1           &kp N2            &kp N3             &kp N4                &kp N5                   &mmv MOVE_DOWN   &kp N6          &kp N7           &kp N8        &kp N9          &kp N0    &trans
+&trans  &trans           &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &mmv MOVE_LEFT   &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp MINUS     &kp EQUAL       &trans    &trans
+                         &kp C_MUTE        &trans             &trans                &trans                   &mmv MOVE_RIGHT  &trans          &trans           &trans
                                                                                                              &mkp LCLK
             >;
 
@@ -106,9 +106,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp F12  &kp F1        &kp F2        &kp F3     &kp F4     &kp F5      &mmv MOVE_UP     &kp F6          &kp F7          &kp F8        &kp F9           &kp F10   &kp F11
-&trans   &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4    &mmv MOVE_DOWN   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp BSLH  &kp GRAVE
-&trans   &out OUT_USB  &out OUT_BLE  &mkp MB4   &mkp MB5   &mkp MB5    &mmv MOVE_LEFT   &kp UNDER       &kp PLUS        &kp LBRC      &kp RBRC         &kp PIPE  &kp TILDE
+&kp F12  &kp F1        &kp F2        &kp F3     &kp F4     &kp F5      &mmv MOVE_UP     &kp F6          &kp F7          &kp F8         &kp F9           &kp F10   &kp F11
+&trans   &trans        &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4    &mmv MOVE_DOWN   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &kp HOME  &kp PAGE_UP
+&trans   &out OUT_USB  &out OUT_BLE  &mkp MB4   &mkp MB5   &mkp MB5    &mmv MOVE_LEFT   &none           &none           &kp BACKSPACE  &kp DELETE       &kp END   &kp PAGE_DOWN
                        &trans        &trans     &trans     &trans      &mmv MOVE_RIGHT  &trans          &trans          &trans
                                                                        &mkp LCLK
             >;
@@ -120,10 +120,10 @@
         config {
             display-name = "CFG";
             bindings = <
-&sys_reset       &kp F1          &kp F2           &kp F3        &kp F4        &kp F5          &mmv MOVE_UP     &kp F6       &kp F7             &kp F8           &kp F9      &kp F10          &sys_reset
-&bootloader      &bt BT_CLR      &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &mmv MOVE_DOWN   &bootloader  &mkp LCLK          &mkp MCLK        &mkp RCLK   &kp PRINTSCREEN  &bootloader
-&rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &out OUT_TOG  &trans        &kp CAPSLOCK    &mmv MOVE_LEFT   &kp C_MUTE   &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
-                                 &kp C_MUTE       &trans        &trans        &trans          &mmv MOVE_RIGHT  &trans       &trans             &trans
+&sys_reset       &none           &none            &none         &none         &none           &mmv MOVE_UP     &none       &none              &none            &none      &none            &sys_reset
+&bootloader      &bt BT_CLR      &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &mmv MOVE_DOWN   &none       &mkp LCLK          &mkp MCLK        &mkp RCLK  &kp PRINTSCREEN  &bootloader
+&rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &out OUT_TOG  &none         &kp CAPSLOCK    &mmv MOVE_LEFT   &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none      &kp SCROLLLOCK   &kp PAUSE_BREAK
+                                 &kp C_MUTE       &trans        &trans        &trans          &mmv MOVE_RIGHT  &trans      &trans             &trans
                                                                                               &mkp LCLK
             >;
 
