@@ -15,6 +15,15 @@
 
 / {
     behaviors {
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <170>;    // <---[[moderate duration]]
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+        };
+
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
             label = "TD0";
@@ -65,7 +74,7 @@
 
             bindings = <
 &kp TILDE  &kp Q           &kp W           &kp E        &kp R             &kp T          &kp K_SCROLL_UP    &kp Y        &kp U              &kp I        &kp O           &kp P               &kp LEFT_BRACKET
-&kp GRAVE  &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LCTRL D  &mt LEFT_SHIFT F  &kp G          &kp K_SCROLL_DOWN  &kp H        &mt RIGHT_SHIFT J  &mt RCTRL K  &mt LEFT_ALT L  &mt RIGHT_GUI SEMI  &kp SQT
+&kp GRAVE  &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LCTRL D  &hm LEFT_SHIFT F  &kp G          &kp K_SCROLL_DOWN  &kp H        &hm RIGHT_SHIFT J  &hm RCTRL K  &hm LEFT_ALT L  &hm RIGHT_GUI SEMI  &kp SQT
 &none      &kp Z           &kp X           &kp C        &kp V             &kp B          &kp LEFT_ARROW     &kp N        &kp M              &kp COMMA    &kp DOT         &kp FSLH            &kp BACKSLASH
                            &kp SPACE       &lt 3 ESC    &lt 1 TAB         &lt 2 SPACE    &kp RIGHT_ARROW    &lt 2 ENTER  &lt 1 ESC          &lt 3 SPACE
                                                                                          &kp ENTER
