@@ -41,7 +41,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - \
+  - {t: \, s: '|'}
   - {t: '$$mdi:keyboard-esc$$', h: Hard Fn}
   - {t: '$$mdi:keyboard-tab$$', h: NUMBER}
   - {t: '$$mdi:keyboard-space$$', h: Soft Fn}
